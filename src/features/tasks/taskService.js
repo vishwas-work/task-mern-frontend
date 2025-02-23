@@ -2,7 +2,7 @@ import axios from "axios";
 
 const createTask = async (task, token) => {
   try {
-    const API_URL = import.meta.env.VITE_API_URL + "api/tasks/";
+    const API_URL = import.meta.env.VITE_API_URL + "/api/tasks/";
     const config = {
       headers: {
         Authorization: `Bearer ${token}`,
@@ -19,7 +19,7 @@ const createTask = async (task, token) => {
 
 const getTasks = async (token) => {
   try {
-    const API_URL = import.meta.env.VITE_API_URL + "api/tasks/";
+    const API_URL = import.meta.env.VITE_API_URL + "/api/tasks/";
     const config = {
       headers: {
         Authorization: `Bearer ${token}`,
@@ -35,7 +35,7 @@ const getTasks = async (token) => {
 
 const deleteTask = async (id, token) => {
   try {
-    const API_URL = import.meta.env.VITE_API_URL + "api/tasks/";
+    const API_URL = import.meta.env.VITE_API_URL + "/api/tasks/";
     const config = {
       headers: {
         Authorization: `Bearer ${token}`,
