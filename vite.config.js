@@ -6,7 +6,8 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:8000",
+        target:
+          "https://task-mern-backend-git-main-vishwas-works-projects.vercel.app/",
         changeOrigin: true,
         secure: false,
       },

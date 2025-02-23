@@ -12,6 +12,9 @@ const TaskList = () => {
     (state) => state.task
   );
 
+  // debugger;
+  console.log(tasks);
+
   useEffect(() => {
     // debugger;
     dispatch(getTasks());

@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 
 const TaskItem = ({ task }) => {
   const dispatch = useDispatch();
+  console.log(task);
 
   const handleDeleteTask = useCallback(() => {
     dispatch(deleteTask(task.tasks_id))

@@ -80,7 +80,7 @@ const taskSlice = createSlice({
       .addCase(createTask.fulfilled, (state, action) => {
         state.isLoading = false;
         state.isSuccess = true;
-        state.tasks.push(action.payload);
+        // state.tasks.push(action.payload);
       })
       .addCase(createTask.rejected, (state, action) => {
         state.isLoading = false;

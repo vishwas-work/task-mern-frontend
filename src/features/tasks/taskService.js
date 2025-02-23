@@ -44,7 +44,7 @@ const deleteTask = async (id, token) => {
 
     // Corrected axios.delete syntax
     const response = await axios.delete(`${API_URL}${id}`, config);
-    debugger;
+    // debugger;
     return response.data;
   } catch (error) {
     // Fixed error handling
